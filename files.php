@@ -63,11 +63,21 @@
 // }
 // fclose($myfile);
 
-$myfile = fopen("cars.xml", "r") or die("Err!");
-	$data = fread($myfile, filesize("cars.xml"));
-	$data_array = simplexml_load_string($data);
-print_r($data_array);
+$file = fopen("customers.csv", "r") or die ("Unable to open file !");
+//$contents = fread($file, filesize("customers.csv"));
+while(!feof($file)) {
+	$customers[] = explode(",",rtrim(fgets($file), "\n"));
+}
+fclose($file);	
 
+$newfile = fopen("email.csv", "w") or die ("Unable to open file !");
+$id = 1;
+foreach ($customers as $customer) {
+$row = $id++ . "." . $customer[0]."@php.lt," . $customer[1] . "\n";
+fwrite($newfile, $row);
+}
+
+fclose($newfile);	
 array_shift($argv); //ismetamas nulinis elementas
 $funcName = array_shift($argv); 
-call_user_func_array($funcName, $argv);
+//call_user_func_array($funcName, $argv);

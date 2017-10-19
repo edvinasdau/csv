@@ -1,16 +1,3 @@
-<?xml version='1.0' encoding='UTF-8'?> 
-
-<document>
-  <customer>
-    <name>Jonas</name> 
-    <email>jon@one.lt</email> 
-  </customer>
-  <customer>
-    <name>Peckelis</name> 
-    <email>peckel@gmail.com</email> 
-  </customer>
-  <customer>
-    <name>Kazys</name> 
-    <email>kazas@op.lt</email> 
-  </customer>
-</document>
+Jonas,jon@one.lt
+Peckelis,peckel@gmail.com
+Kazys,kazas@op.lt
