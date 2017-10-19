@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<document>
+  <car>
+    <make>BMW</make> 
+    <model>435</model> 
+  </car>
+  <car>
+    <make>Audi</make> 
+    <model>A6</model> 
+  </car>
+  <car>
+    <make>Fiat</make> 
+    <model>500</model> 
+  </car>
+  <car>
+    <make>VW</make> 
+    <model>Golf mkII</model> 
+  </car>
+  <plane>
+    <make>Cessna</make> 
+    <model>152</model> 
+  </plane>
+  <plane>
+    <id>5438434</id>
+    <make>Zephyr</make> 
+    <model>1002</model>
+    <seat>4</seat> 
+  </plane>
+</document>
